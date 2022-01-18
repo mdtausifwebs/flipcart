@@ -1,0 +1,82 @@
+.order {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 20px;
+}
+
+.order_box {
+    width: 70%;
+}
+
+.order_top {
+    background: rgb(47, 47, 255);
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.order_bottom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.order_left {
+    width: 40%;
+}
+
+.order_left input {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.order_left h6 span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.order_left p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.order_left a span {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+
+}
+
+.order_left button {
+    width: 90%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    background: orange;
+    border: none;
+}
+
+.order_right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.order_right p {
+    font-size: 16px;
+
+}

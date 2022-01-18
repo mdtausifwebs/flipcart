@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            max-width: 1300px;
+
+        }
+        #showuser{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+           
+        }
+        .Userbox{
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            border: 3px solid blue;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            box-shadow: 10px 15px #888888;
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            font-weight: 500;
+            justify-items: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="showuser"></div>
+</body>
+
+</html>
+<script>
+    // fetch("http://jsonplaceholder.typicode.com/todos")(function (res) {
+    //     return res.json()
+    // }).then(function (obj) {
+    //     console.log(obj)
+    // })
+    async function maindata() {
+        var data = await fetch("http://jsonplaceholder.typicode.com/todos")
+        var res = await data.json()
+        // console.log(res)
+        showUser(res)
+    }
+    maindata()
+
+    function showUser(User) {
+        var showuser=document.getElementById("showuser")
+       for (let i = 0; i < User.length; i++) {
+           const element = User[i];
+        //    console.log(element)
+        var div=document.createElement("div")
+        div.setAttribute("class","Userbox")
+
+        var title=document.createElement("h1")
+        title=element.title
+
+        var id=document.createElement("h4")
+        id=element.id
+
+        var userId=document.createElement("h4")
+        userId=element.userId
+
+        var completed=document.createElement("h4")
+        completed=element.completed
+        
+           div.append(title,id,userId,completed)
+
+           showuser.append(div)
+       }
+    }
+</script>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+
+    <link rel="stylesheet" href="./cssPage/feature/feature.css">
+    <link rel="stylesheet" href="./cssPage/header/top_header.css">
+    <link rel="stylesheet" href="./cssPage/header/bottom_header.css">
+    <link rel="stylesheet" href="./cssPage/hero/slider.css">
+
+    <link rel="stylesheet" href="./cssPage/ind_pro_css/index_pro_css.css">
+    <link rel="stylesheet" href="./cssPage/footer/footer.css">
+
+
+    <title>flipcart_clone</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="container">
+                <div class="container-logo">
+                    <div class="logo-sub">
+                        <div class="sub-img">
+                            <img class="logo"
+                                src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                                alt="logo" />
+                        </div>
+                        <div class="sub-plus">
+                            <p>Explore</p>
+                            <span>Plus</span>
+                            <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-search">
+                    <div class="search-sub">
+                        <input class="input" type="search" placeholder="Search Product" />
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="container-login">
+                    <div class="login-sec login">
+                        <h3 class="login-sec-login" onmouseover="showpopup()" onmouseleave="hidepopup()">Login</h3>
+                        <div class="login_pop">
+                            <div class="login_pop_Sec">
+                                <div class="login_pop_Sec_box">
+                                    <div class="login_pop_box_el">
+                                        <a href="#">New customer</a>
+                                        <a href="#"><span>Sign Up</span></a>
+                                    </div>
+                                    <div class="login_pop_box_el"><a href="#"><i class="fas fa-search"></i>My
+                                            Profile</a>
+                                    </div>
+                                    <div class="login_pop_box_el"><a href="#"><i class="fas fa-search"></i>Flipkart plus
+                                            Zone</a></div>
+                                    <div class="login_pop_box_el"><a href="#"><i class="fas fa-search"></i>Order</a>
+                                    </div>
+                                    <div class="login_pop_box_el"><a href="#"><i class="fas fa-search"></i>Wishlist</a>
+                                    </div>
+                                    <div class="login_pop_box_el"><a href="#"><i class="fas fa-search"></i>Rewards</a>
+                                    </div>
+                                    <div class="login_pop_box_el"><a href="#"><i class="fas fa-search"></i>Gift
+                                            Cards</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="login-sec">
+                        <h3 class="login-sec-more">more</h3>
+                        <a href="#"><i class="fas fa-chevron-up"></i></a>
+                        <a href="#"><i class="fas fa-chevron-down"></i></a>
+                    </div>
+                    <div class="login-sec">
+                        <a href="./htmlPage/page_cart.html"><i class="fas fa-shopping-cart"></i>
+                            <h3 class="login-sec-cart">Cart </h3>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- pop up  window start here  -->
+
+
+        <menu>
+            <div class="menucontainer">
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Top Offers</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Grocery</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Mobiles</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Fashion</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Electronics</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Home</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Appliance</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Travel</span>
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menubar-imgs">
+                        <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+                            alt="menuimg">
+                    </div>
+                    <div class="menubar-texts">
+                        <span>Beauty Toys & More</span>
+                    </div>
+                </div>
+        </menu>
+        <style>
+
+        </style>
+        <!-- slider section start here  -->
+        <div class="slider-container">
+            <div class="slider-parent">
+                <div class="slider-parent-box">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1/3</div>
+                        <img src="./images/4.jpg" alt="">
+                        <div class="text">Caption text 1 </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2/3</div>
+                        <img src="./images/6.jpg" alt="">
+                        <div class="text">Caption text 1 </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3/3</div>
+                        <img src="./images/8.jpg" alt="">
+                        <div class="text">Caption text 1 </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095</a>
+                </div>
+                <div class="slider-prev">
+                    <span class="dot" onclick="currentSlides(1)"> </span>
+                    <span class="dot" onclick="currentSlides(2)"></span>
+                    <span class="dot" onclick="currentSlides(3)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="shoes-container">
+            <div class="shoes-sec">
+                <div class="shoes-box">
+                    <div class="shoes">
+                        <div class="shoes-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="shoes-desc">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="feature section-p1">
+            <div class="fe-box">
+                <img src="https://media.istockphoto.com/photos/close-up-of-a-courier-person-making-a-delivery-to-a-customer-at-home-picture-id1277579550?b=1&k=20&m=1277579550&s=170667a&w=0&h=MnH-TpnfP_nTbkgoWoiC5s3M3WZBrAn71-AV0Mk-4og="
+                    alt="">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://media.istockphoto.com/photos/carton-box-and-green-arrow-picture-id184097493?b=1&k=20&m=184097493&s=170667a&w=0&h=5x7yitawgKwGl6SkS8QiZZg8-ke8XtiNSwECCMOtQnc="
+                    alt="">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://media.istockphoto.com/photos/accurate-shipping-delivery-truck-picture-id1313355353?b=1&k=20&m=1313355353&s=170667a&w=0&h=8TU5vgselJUX3wRKh26DBo-yqxP8_4iYqkqmsa7xqdg="
+                    alt="">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://media.istockphoto.com/photos/supply-chain-management-picture-id1262432662?b=1&k=20&m=1262432662&s=170667a&w=0&h=Vlvex3pwK5R0KChrR8pB4PqL2_l940wNOa5vTDRTVoU="
+                    alt="">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://media.istockphoto.com/photos/ecology-logistics-concept-picture-id647607274?b=1&k=20&m=647607274&s=170667a&w=0&h=_773-B1FylK10uRgLw_te8lNCFdOly-KZvetdbQsADc="
+                    alt="">
+                <h6>Free Shipping</h6>
+            </div>
+            <div class="fe-box">
+                <img src="https://media.istockphoto.com/photos/cardboard-box-with-gps-marker-3d-rendering-picture-id1203759569?b=1&k=20&m=1203759569&s=170667a&w=0&h=cAiBhpmddulJ7qS4BUbSsE02PjflnFYEry59Whoot_0="
+                    alt="">
+                <h6>Free Shipping</h6>
+            </div>
+
+        </section>
+    </div>
+    <div class="product_sec">
+        <div class="condution">
+            <div class="containt">
+                <h3>Deals of the Day</h3>
+                <h3>air conditioner</h3>
+                <a href="./htmlPage/page_condition.html"><button>view all</button></a>
+            </div>
+            <div id="product_conditioner">
+            </div>
+        </div>
+        <div class="cooler">
+            <div class="containt">
+                <h3>Deals of the Day</h3>
+                <h3> cooler</h3>
+                <a href="./htmlPage/page_cooler.html"><button>view all</button></a>
+            </div>
+            <div class="product_sec">
+                <div id="product_cooler">
+                </div>
+            </div>
+        </div>
+        <div class="washing">
+            <div class="containt">
+                <h3>Deals of the Day</h3>
+                <h3>washing machine</h3>
+                <a href="./htmlPage/page_washing.html"><button>view all</button></a>
+            </div>
+            <div class="product_sec">
+                <div id="product_washing">
+                </div>
+            </div>
+        </div>
+        <div class="female">
+            <div class="containt">
+                <h3>Deals of the Day</h3>
+                <h3>female Fashion</h3>
+                <a href="./htmlPage/page_kurti.html"><button>view all</button></a>
+            </div>
+            <div class="product_sec">
+                <div id="product_female">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer_up">
+            <div class="footer_up_left">
+                <div class="footer_up_left_text">
+                    <h3>ABOUT</h3>
+                    <a href="#">
+                        <p>Contact Us</p>
+                    </a>
+                    <a href="#">
+                        <p>About Us</p>
+                    </a>
+                    <a href="#">
+                        <p>Careers</p>
+                    </a>
+                    <a href="#">
+                        <p>Flipkart Stories</p>
+                    </a>
+                    <a href="#">
+                        <p>Press</p>
+                    </a>
+                    <a href="#">
+                        <p>Flipkart Wholesale</p>
+                    </a>
+                    <a href="#">
+                        <p>Corporate Information</p>
+                    </a>
+                </div>
+
+                <div class="footer_up_left_text">
+                    <h3>HELP</h3>
+                    <a href="#">
+                        <p>Payments</p>
+                    </a>
+                    <a href="#">
+                        <p>Shipping</p>
+                    </a>
+                    <a href="#">
+                        <p>Cancellation & Returns</p>
+                    </a>
+                    <a href="#">
+                        <p>FAQ</p>
+                    </a>
+                    <a href="#">
+                        <p>Report Infringement</p>
+                    </a>
+
+                </div>
+                <div class="footer_up_left_text">
+                    <h3>POLICY</h3>
+                    <a href="#">
+                        <p>Return Policy</p>
+                    </a>
+                    <a href="#">
+                        <p>Terms Of Use</p>
+                    </a>
+                    <a href="#">
+                        <p>Security</p>
+                    </a>
+                    <a href="#">
+                        <p>Privacy</p>
+                    </a>
+                    <a href="#">
+                        <p>Sitemap</p>
+                    </a>
+                    <a href="#">
+                        <p>EPR Compliance</p>
+                    </a>
+                </div>
+                <div class="footer_up_left_text">
+                    <h3>SOCIAL</h3>
+                    <a href="#">
+                        <p>Facebook</p>
+                    </a>
+                    <a href="#">
+                        <p>Twitter</p>
+                    </a>
+                    <a href="#">
+                        <p>Youtube</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_up_right">
+                <div class="footer_up_right_text">
+                    <h3>Mail Us</h3>
+                    <p>
+                        Flipkart Internet Private Limited,
+
+                        Buildings Alyssa, Begonia &
+
+                        Clove Embassy Tech Village,
+
+                        Outer Ring Road, Devarabeesanahalli Village,
+
+                        Bengaluru, 560103,
+
+                        Karnataka, India
+                    </p>
+                </div>
+                <div class="footer_up_right_text">
+                    <h3>Registered Office Address</h3>
+                    <p>Flipkart Internet Private Limited,
+
+                        Buildings Alyssa, Begonia &
+
+                        Clove Embassy Tech Village,
+
+                        Outer Ring Road, Devarabeesanahalli Village,
+
+                        Bengaluru, 560103,
+
+                        Karnataka, India
+
+                        CIN : U51109KA2012PTC066107
+
+                        Telephone: 1800 202 9898</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer_down">
+            <div class="footer_down_left">
+                <a href="#"><i class="fas fa-home"></i>Sell On Flipkart</a>
+                <a href="#"><i class="fas fa-home"></i> Advertise</a>
+                <a href="#"><i class="fas fa-home"></i>Gift Cards</a>
+                <a href="#"><i class="fas fa-home"></i>Help Center</a>
+                <p> © 2007-2022 Flipkart.com</p>
+            </div>
+            <div class="footer_down_right">
+                <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./jsPage/index_slider.js"></script>
+<script src="./jsPage/index_condition.js"></script>
+<script src="./jsPage/index_cooler.js"></script>
+<script src="./jsPage/index_washing.js"></script>
+<script src="./jsPage/index_kurti.js"></script>
+<!-- <script src="./jsPage/index_popup.js"></script> -->

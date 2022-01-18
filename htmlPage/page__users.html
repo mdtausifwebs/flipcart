@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+</head>
+
+<body>
+    <div class="profile">
+        <div id="user"></div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var users = JSON.parse(localStorage.getItem("users"))
+    var parent = document.getElementById("user")
+    function showuser() {
+        // console.log(users)
+        users.map((el) => {
+            // console.log(el)
+            var userbox = document.createElement("div")
+            userbox.setAttribute("class", "userbox")
+            var name = document.createElement("p")
+            name = el.Name
+            var email = document.createElement("p")
+            email = el.Email
+            var mobile = document.createElement("p")
+            mobile = el.Mobile
+            var image = document.createElement("img")
+            image.src = el.Image
+            // console.log(el.Image)
+            userbox.append(image, name, email, mobile)
+            parent.append(userbox)
+        })
+    }
+    showuser()
+</script>

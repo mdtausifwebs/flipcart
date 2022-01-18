@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssPage/loginsignup/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+   
+    <div class="login_page">
+        <div class="login_page_sec">
+            <div class="login_page_sec_box">
+                <div class="login_box_left">
+                    <h3>Login</h3>
+                    <h5>Get access to your Orders, Wishlist and Recommendations</h5>
+                </div>
+                <div class="login_box_right">
+                    <input type="text" id="email" placeholder="Enter Email/Mobile Number">
+                    <input type="password" id="mobile" placeholder="Enter Password">
+                   <span>By continuing, you agree to Flipkart's Terms of Use and Privacy Policy.</span>
+                    <a href="#"><button id="loginbtn" onclick="login()">Log In </button></a>
+                    <span>OR</span>
+                    <a href="#"><button>Request OTP</button></a>
+                    <a href="./page__signup.html"><button>New to Flipkart? Create an account</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var users = JSON.parse(localStorage.getItem("users"))
+    function login() {
+        var email = document.getElementById("email").value
+        var mobile = document.getElementById("mobile").value
+        // console.log(users)
+        var res = false
+        users.map((el) => {
+            if (el.Mobile == mobile && el.Email == email) {
+                res = true
+            }
+        })
+        if (res == true) {
+            alert("log in successfull")
+            window.location.assign("./../index.html")
+        } else {
+            alert("Your input is wrong")
+        }
+    }
+
+
+</script>

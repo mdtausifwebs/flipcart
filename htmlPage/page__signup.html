@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssPage/loginsignup/signup.css">
+    <title>signup</title>
+</head>
+
+<body>
+    <div class="signup_page">
+        <div class="signup_page_sec">
+            <div class="signup_page_sec_box">
+                <div class="signup_box_left">
+                    <h3>Looks like you're new here!</h3>
+                    <h5>Sign up with your mobile number to get started</h5>
+                </div>
+                <div class="signup_box_right">
+                    <input type="Number" id="mobile" placeholder="Enter Mobile Number">
+                    <span>By continuing, you agree to Flipkart's <a href="#">Terms of Use and Privacy Policy.</a></span>
+                    <a href="#"><button id="signupbtn" onclick="signup()">CONTINUE </button></a>
+                    <a href="./page__Login.html"><button>Existing User ? Log in </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var Users = JSON.parse(localStorage.getItem("Users")) || []
+    function signup() {
+        // var email = document.getElementById("email").value
+        var mobile = document.getElementById("mobile").value
+        console.log(mobile)
+        var res = false
+        if (mobile == "") {
+            alert("please Enter Email Or Mobile no")
+        } else {
+            if (Users.length == null) {
+                Users.push({ Mobile: mobile })
+                localStorage.setItem("Users", JSON.stringify(Users))
+            } else {
+                Users.map((el) => {
+                    if (el.Mobile == mobile) {
+                        res = true
+                    }
+                })
+            }
+        }
+        if (res == true) {
+            alert("log in successfull")
+            // window.location.assign("./../index.html")
+        } else {
+            // alert("Your input is wrong")
+            Users.push({ Mobile: mobile })
+            localStorage.setItem("Users", JSON.stringify(Users))
+        }
+    }
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formsec">
+            Name: <input type="text" id="name" placeholder="Type your Name">
+            Email: <input type="text" id="email" placeholder="Type your Email">
+            Mobile: <input type="Number" id="mobile" placeholder="Type your Mobile">
+            Image Url: <input type="text" id="image" placeholder="Type your Image Url">
+            <button onclick="submitform()">Submit Form</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    var users = JSON.parse(localStorage.getItem("users")) || []
+    function submitform() {
+        var name = document.getElementById("name").value
+        var email = document.getElementById("email").value
+        var mobile = document.getElementById("mobile").value
+        var image = document.getElementById("image").value
+        var id = Date()
+        var res = true
+        if (name == "" || email == "" || mobile == "" || image == "") {
+            alert("All input are required")
+        } else {
+            if (users.length == null) {
+                res == true
+            } else if (users.length > 0) {
+                users.map((el) => {
+                    if (el.Id == id || el.Mobile == mobile) {
+                        res = false
+                        alert("all ready registered")
+                        window.location.assign("./Login.html")
+                    }
+                })
+            }
+            if (res == true) {
+                var user = {
+                    Id: id,
+                    Name: name,
+                    Email: email,
+                    Mobile: mobile,
+                    Image: image
+                }
+                users.push(user)
+                localStorage.setItem("users", JSON.stringify(users))
+            }
+        }
+        console.log(users)
+
+    }
+</script> -->

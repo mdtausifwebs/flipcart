@@ -1,0 +1,81 @@
+.login_page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_page_sec {
+    width: 60%;
+    /* background-color: blue; */
+    height: 800px;
+    box-shadow: 5px 5px 5px  rgb(189, 189, 190);
+    padding: 20px;
+}
+
+.login_page_sec_box {
+    padding: 2px;
+    display: flex;
+}
+
+.login_box_left {
+    width: 50%;
+    background-image: url("/Projet_clone/Flipcart_clone/image/claudia-cotici-Wi_OMCxUOKI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   color: rgb(129, 123, 123);
+}
+.login_box_left h3{
+    font-size: 30px;
+}
+
+.login_box_left h5{
+    font-size: 18px;
+}
+.login_box_right {
+    width: 50%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login_box_right input {
+    width: 90%;
+    height: 40px;
+    margin: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+.login_box_right span{
+    font-size: 17px;
+}
+
+.login_box_right a button {
+    width: 28vw;
+    height: 60px;
+    margin: 30px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 700;
+    color: blue;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+#loginbtn{
+    background-color: orangered;
+    color: white;
+}

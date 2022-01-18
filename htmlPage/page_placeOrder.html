@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../cssPage/header/top_header.css">
+    <link rel="stylesheet" href="../cssPage/order/login_sec.css">
+    <link rel="stylesheet" href="../cssPage/order/address_sec.css">
+    <link rel="stylesheet" href="../cssPage/pro_page/page_cart.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="container-logo">
+                <div class="logo-sub">
+                    <div class="sub-img">
+                        <img class="logo"
+                            src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                            alt="logo" />
+                    </div>
+                    <div class="sub-plus">
+                        <p>Explore</p>
+                        <span>Plus</span>
+                        <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+
+    <div class="order">
+        <div class="order_box">
+            <div class="order_top">
+                <p>1</p>
+                <h4>LOGIN OR SIGNUP</h4>
+            </div>
+            <div class="order_bottom">
+                <div class="order_left">
+                    <input type="text" placeholder="Enter Email/Mobile Number">
+                    <h6><span>Please enter valid Email ID/Mobile Number</span></h6>
+                    <p>By continuing, you agree to Flipkart's <a href="#"><span>Terms of Use </span></a> and <a
+                            href="#"><span>Privacy Policy.</span></a>
+                    </p>
+                    <button>CONTINUE</button>
+                </div>
+                <div class="order_right">
+                    <p>Advantage of our secure login </p>
+                    <a><i class="fas fa-search"></i> <span>Easily Track Orders, hassle free Returns</span></a>
+                    <a><i class="fas fa-search"></i> <span>Get Relevant Alerts and Recommendation</span></a>
+                    <a><i class="fas fa-search"></i> <span>Wishlist, Review,Ratings and more.</span></a>
+                </div>
+            </div>
+
+            <div class="address_sec_box">
+                <div class="delivery">
+                    <p>2</p>
+                    <h4>DELIVERY ADDRESS</h4>
+                </div>
+                <div class="showsaveaddress">
+                    <div id="showAddress">
+                    </div>
+                </div>
+                <div class="delivery_radio">
+                    <input type="radio" id="html" value="HTML">
+                    <label>ADD A NEW ADDRESS</label><br>
+                </div>
+                <div class="address_box">
+                    <div class="delivery_address">
+                        <button>Use My current location</button>
+                    </div>
+                    <div class="address_box_details">
+                        <div class="address_box_ele">
+                            <div class="box_ele">
+                                <input type="text" placeholder="Name" id="name">
+                            </div>
+                            <div class="box_ele">
+                                <input type="text" placeholder="10-digit mobile number" id="mobile">
+                            </div>
+                        </div>
+                        <div class="address_box_ele">
+                            <div class="box_ele">
+                                <input type="text" placeholder="Pincode" id="pin">
+                            </div>
+                            <div class="box_ele">
+                                <input type="text" placeholder="Locality" id="location">
+                            </div>
+                        </div>
+                        <div class="address_box_ele">
+                            <textarea cols="48" rows="5" placeholder="Address (Area and Street)"
+                                id="textarea"></textarea>
+                        </div>
+                        <div class="address_box_ele">
+                            <div class="box_ele">
+                                <input type="text" placeholder="city/District/Town" id="city">
+                            </div>
+                            <div class="box_ele">
+                                <p>state</p>
+                                <select name="state" id="state">
+                                    <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="	Meghalaya"> Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Orissa">Orissa</option>
+                                    <option value="Puducherry">Puducherry </option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="address_box_ele">
+                            <div class="box_ele">
+                                <input type="text" placeholder="Landmark (Optional)" id="landmark">
+                            </div>
+                            <div class="box_ele">
+                                <input type="text" placeholder="Alternate Phone (Optional)" id="altno">
+                            </div>
+                        </div>
+
+                        <div class="radio_box_ele">
+                            <div class="adress_label">
+                                <p>Address Type</p>
+                            </div>
+                            <div class="box_ele_radio">
+                                <div class="radio_button">
+                                    <input type="radio" id="home" value="home">
+                                    <label>Home (All day delivery)</label><br>
+                                </div>
+                                <div class="radio_button">
+                                    <input type="radio" id="work" value="work">
+                                    <label>Work (Delivery between 10 AM - 5 PM)</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address_box_ele">
+                            <div class="box_ele ">
+                                <button class="orenge" onclick="submit()">SAVE AND DELIVERY HERE</button>
+                            </div>
+                            <div class="box_ele">
+                                <button class="cancel" onclick="cancel()">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+
+            </style>
+            <div class="payment">
+                <div class="paymet_sec">
+                    <div class="payment_sec_box">
+                        <div class="payment_box_radio">
+                            <input type="radio" id="atmcard" value="card">
+                            <label>Credit / Debit / ATM Card </label><br>
+                        </div>
+                        <div class="payment_box_card_details">
+                            <div class="card">
+                                <input type="number" id="cardno">
+                            </div>
+                            <div class="card">
+                                <input type="date" id="carddate">
+                                <input type="number" id="cardcvv">
+
+                            </div>
+
+                            <div class="card">
+                                <button onclick="pay()">pay rs 5256</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+               
+            </style>
+            <div class="displaymsg">
+                <div id="msg">
+                </div>
+            </div>
+        </div>
+        <style>
+            .sidebar{
+                width: 28%;
+                /* border: 1px solid black; */
+            }
+        </style>
+        <div class="sidebar">
+            <div id="show_price"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="../jsPage/page_placeOrder.js"></script>
